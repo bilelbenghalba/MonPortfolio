@@ -3,38 +3,301 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Portfolio - Bilel Ben Ghalba</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <h1>Bienvenue sur mon Portfolio</h1>
-  <nav>
-    <a href="#apropos">À propos</a>
-    <a href="#projets">Projets</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
 
-<section id="apropos">
-  <h2>À propos de moi</h2>
-  <p>Je suis développeur Full Stack passionné par les projets web et mobile.</p>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="logo">Bilel BEN GHALBA</div>
+  <ul class="nav-links">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#experiences">Expériences</a></li>
+    <li><a href="#projets">Projets Freelance</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="accueil" class="hero">
+  <div class="hero-content">
+    <h1>Bilel Ben Ghalba</h1>
+    <h2>Ingénieur Développeur Full Stack</h2>
+    <p>Spécialisé en microservices, intelligence artificielle et développement mobile. Expert en React Native, Spring Boot, Node.js et Angular.</p>
+    <div class="hero-buttons">
+      <a href="#experiences" class="btn btn-primary">Mes Expériences</a>
+      <a href="#projets" class="btn btn-secondary">Mes Projets</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="img/bilel.jpg" alt="Bilel Ben Ghalba">
+  </div>
 </section>
 
-<section id="projets">
-  <h2>Mes Projets</h2>
-  <!-- Ajoute ici tes projets avec images et descriptions -->
+<!-- Experiences Section (Stages) -->
+<section id="experiences" class="experiences">
+  <h2 class="section-title">Expériences Professionnelles</h2>
+  <p class="section-subtitle">Stages et missions en entreprise</p>
+
+  <div class="timeline">
+
+    <!-- Experience 1: Mobelite -->
+    <div class="timeline-item" data-experience="mobelite">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div>
+            <h3>Stage PFE - Développeur Full-Stack & IA</h3>
+            <p class="company"><i class="fas fa-building"></i> Mobelite Tunisie</p>
+          </div>
+          <span class="period">Fév - Août 2025</span>
+        </div>
+        <p class="exp-description">Plateforme mobile intelligente d'analyse des avis clients</p>
+        <div class="tech-tags">
+          <span>React Native</span>
+          <span>Node.js</span>
+          <span>Python</span>
+          <span>Apache Kafka</span>
+          <span>MongoDB</span>
+          <span>Docker</span>
+        </div>
+        <a href="#" class="view-details-btn">
+          Voir les détails <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Experience 2: M&L -->
+    <div class="timeline-item" data-experience="ml-international">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div>
+            <h3>Développeur Full-Stack</h3>
+            <p class="company"><i class="fas fa-building"></i> M&L International</p>
+          </div>
+          <span class="period">Juin - Déc 2024</span>
+        </div>
+        <p class="exp-description">Module de gestion des litiges - Application Docutrans</p>
+        <div class="tech-tags">
+          <span>Angular</span>
+          <span>Ionic</span>
+          <span>Symfony</span>
+          <span>GitLab CI/CD</span>
+          <span>Jira</span>
+        </div>
+        <a href="#" class="view-details-btn">
+          Voir les détails <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Experience 3: IBS -->
+    <div class="timeline-item" data-experience="ibs-outsourcing">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div>
+            <h3>Développeur Full-Stack</h3>
+            <p class="company"><i class="fas fa-building"></i> IBS Outsourcing</p>
+          </div>
+          <span class="period">Mai - Juil 2023</span>
+        </div>
+        <p class="exp-description">Module de gestion des tâches internes</p>
+        <div class="tech-tags">
+          <span>Spring Boot</span>
+          <span>Angular</span>
+          <span>GitLab</span>
+          <span>Jira</span>
+        </div>
+        <a href="#" class="view-details-btn">
+          Voir les détails <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email : monemail@example.com</p>
+<!-- Projects Section (Freelance) -->
+<section id="projets" class="projects">
+  <h2 class="section-title">Projets Freelance</h2>
+  <p class="section-subtitle">Réalisations en tant que développeur indépendant</p>
+
+  <div class="projects-grid">
+
+    <!-- Project 1: Surface Sport -->
+    <div class="project-card" data-project="surface-sport">
+      <div class="project-image">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="project-content">
+        <h3>Surface Sport – E-commerce</h3>
+        <p>Site e-commerce complet pour chaussures sport avec interfaces Admin et Client</p>
+        <div class="project-tech">
+          <span>Laravel</span>
+          <span>Vue.js</span>
+          <span>MySQL</span>
+          <span>SEO</span>
+        </div>
+        <div class="project-links">
+          <a href="https://surface-sport.com/" target="_blank" class="project-link-visit">
+            <i class="fas fa-external-link-alt"></i> Visiter le site
+          </a>
+          <a href="#" class="project-link-details">
+            Voir détails <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Event Platform -->
+    <div class="project-card" data-project="event-platform">
+      <div class="project-image">
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="project-content">
+        <h3>Plateforme de Gestion d'Événements</h3>
+        <p>Système complet pour la gestion et l'organisation d'événements</p>
+        <div class="project-tech">
+          <span>Symfony</span>
+          <span>API Platform</span>
+          <span>Angular</span>
+          <span>Docker</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link-details">
+            Voir détails <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<!-- Skills Section -->
+<section id="competences" class="skills">
+  <h2 class="section-title">Compétences Techniques</h2>
+  <div class="skills-container">
+    <div class="skill-category">
+      <h3><i class="fab fa-react"></i> Frontend & Mobile</h3>
+      <div class="skill-list">
+        <span>React Native</span>
+        <span>Angular</span>
+        <span>Vue.js</span>
+        <span>Ionic</span>
+        <span>HTML/CSS/JS</span>
+        <span>Redux</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3><i class="fas fa-server"></i> Backend & DevOps</h3>
+      <div class="skill-list">
+        <span>Node.js</span>
+        <span>Spring Boot</span>
+        <span>Symfony</span>
+        <span>Apache Kafka</span>
+        <span>Docker</span>
+        <span>GitLab CI/CD</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3><i class="fas fa-database"></i> Bases de Données & Outils</h3>
+      <div class="skill-list">
+        <span>MongoDB</span>
+        <span>MySQL</span>
+        <span>PostgreSQL</span>
+        <span>Git</span>
+        <span>Jira</span>
+        <span>Figma</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Contactez-moi</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Travaillons ensemble !</h3>
+      <p>Je suis ouvert aux opportunités de freelance et aux projets innovants.</p>
+      <div class="contact-details">
+        <p><i class="fas fa-envelope"></i> bilelbenghalba@outlook.com</p>
+        <p><i class="fas fa-phone"></i> +216 53 819 634</p>
+        <p><i class="fas fa-map-marker-alt"></i> Tunis, Tunisie</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/bilel-ben-ghalba-85490329a/" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/bilelbenghalba" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
-  <p>© 2025 Mon Nom</p>
+  <p>© 2025 Bilel Ben Ghalba. Tous droits réservés.</p>
 </footer>
 
-<script src="js/script.js"></script>
+<!-- Modal for Details -->
+<div class="modal" id="detailsModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-subtitle"></p>
+    </div>
+    <div class="modal-body">
+
+      <div class="modal-section">
+        <h3><i class="fas fa-info-circle"></i> Description</h3>
+        <p id="modal-description"></p>
+      </div>
+
+      <div class="modal-section">
+        <h3><i class="fas fa-calendar"></i> Période</h3>
+        <p id="modal-date"></p>
+      </div>
+
+      <div class="modal-section">
+        <h3><i class="fas fa-tasks"></i> Responsabilités et Réalisations</h3>
+        <ul id="modal-tasks"></ul>
+      </div>
+
+      <div class="modal-section">
+        <h3><i class="fas fa-code"></i> Technologies Utilisées</h3>
+        <div id="modal-tech" class="tech-tags"></div>
+      </div>
+
+      <div class="modal-section" id="modal-features-section">
+        <h3><i class="fas fa-check-circle"></i> Fonctionnalités Clés</h3>
+        <ul id="modal-features"></ul>
+      </div>
+
+      <div class="modal-section" id="modal-results-section">
+        <h3><i class="fas fa-chart-line"></i> Résultats et Impact</h3>
+        <p id="modal-results"></p>
+      </div>
+
+      <div class="modal-links" id="modal-links-section">
+        <h3><i class="fas fa-link"></i> Liens</h3>
+        <div id="modal-links"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
 </body>
 </html>
