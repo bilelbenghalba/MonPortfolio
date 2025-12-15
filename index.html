@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -19,7 +20,17 @@
     <li><a href="#projets">Projets Freelance</a></li>
     <li><a href="#competences">Compétences</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#formation">Formation</a></li>
+    <li><a href="#cv">CV</a></li>
   </ul>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/bilel-ben-ghalba-85490329a/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/bilelbenghalba" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
 </nav>
 
 <!-- Hero Section -->
@@ -65,11 +76,18 @@
           <span>MongoDB</span>
           <span>Docker</span>
         </div>
-        <a href="#" class="view-details-btn">
-          Voir les détails <i class="fas fa-arrow-right"></i>
-        </a>
+        <div class="cv-buttons">
+          <a href="#details-section" class="view-details-btn">
+            Voir les détails <i class="fas fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+
       </div>
+
     </div>
+
 
     <!-- Experience 2: M&L -->
     <div class="timeline-item" data-experience="ml-international">
@@ -219,7 +237,115 @@
     </div>
   </div>
 </section>
+<!-- Formation Section -->
+<section id="formation" class="formation">
+  <h2 class="section-title">Formation</h2>
+  <p class="section-subtitle">Mon parcours académique</p>
 
+  <div class="timeline">
+
+    <!-- Diplôme d'Ingénieur -->
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div>
+            <h3>Diplôme d'Ingénieur en Informatique</h3>
+            <p class="company"><i class="fas fa-graduation-cap"></i> ESPRIT, Tunis</p>
+          </div>
+          <span class="period">2022 - 2025</span>
+        </div>
+        <p class="exp-description">Spécialisation en Développement Logiciel, Intelligence Artificielle et Architecture des Systèmes</p>
+        <div class="tech-tags">
+          <span>Algorithms & Data Structures</span>
+          <span>Software Engineering</span>
+          <span>Machine Learning</span>
+          <span>Microservices</span>
+          <span>Projet de Fin d'Études</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Licence en Énergie -->
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div>
+            <h3>Licence Appliquer en Énergie</h3>
+            <p class="company"><i class="fas fa-graduation-cap"></i> Université de Carthage - IPEIM</p>
+          </div>
+          <span class="period">2016 - 2020</span>
+        </div>
+        <p class="exp-description">Formation en programmation C++ et algorithmes appliqués aux systèmes énergétiques</p>
+        <div class="tech-tags">
+          <span>C++</span>
+          <span>Algorithmes</span>
+          <span>Programmation Orientée Objet</span>
+          <span>Mathématiques Appliquées</span>
+          <span>Physique & Thermodynamique</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Baccalauréat -->
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div>
+            <h3>Baccalauréat Sciences Techniques</h3>
+            <p class="company"><i class="fas fa-graduation-cap"></i> Lycée tunis</p>
+          </div>
+          <span class="period">2016</span>
+        </div>
+        <p class="exp-description">Section Sciences Techniques </p>
+        <div class="tech-tags">
+          <span>Mathématiques</span>
+          <span>Physique</span>
+          <span>Informatique</span>
+          <span>Sciences de l'Ingénieur</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- CV Section -->
+<section id="cv" class="cv-section">
+  <h2 class="section-title">Mon CV</h2>
+  <p class="section-subtitle">Consultez ou téléchargez mon curriculum vitae</p>
+
+  <div class="cv-container">
+    <div class="cv-card">
+      <h3>CV en Français</h3>
+      <div class="cv-buttons">
+        <a href="cv/cv_bilel_fr.pdf" target="_blank" class="btn btn-primary">
+          <i class="fas fa-eye"></i> Voir en ligne
+        </a>
+        <a href="cv/cv_bilel_fr.pdf" download class="btn btn-secondary">
+          <i class="fas fa-download"></i> Télécharger PDF
+        </a>
+      </div>
+    </div>
+
+    <div class="cv-card">
+      <h3>CV in English</h3>
+      <div class="cv-buttons">
+        <a href="cv/cv_bilel_en.pdf" target="_blank" class="btn btn-primary">
+          <i class="fas fa-eye"></i> View Online
+        </a>
+        <a href="cv/cv_bilel_en.pdf" download class="btn btn-secondary">
+          <i class="fas fa-download"></i> Download PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Contact Section -->
 <section id="contact" class="contact">
   <h2 class="section-title">Contactez-moi</h2>

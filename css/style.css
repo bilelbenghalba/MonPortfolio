@@ -165,7 +165,7 @@ body {
 
 .btn-secondary {
   background: rgba(255,255,255,0.2);
-  color: white;
+  color: #667eea;
   border: 2px solid white;
 }
 
@@ -936,3 +936,115 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #764ba2;
 }
+/* ==========================================
+   SECTION FORMATION
+   ========================================== */
+.formation {
+  padding: 100px 5%;
+  background: white;
+}
+
+/* Réutilise les styles de .experiences .timeline – déjà existants */
+
+/* ==========================================
+   SECTION CV
+   ========================================== */
+.cv-section {
+  padding: 100px 5%;
+  background: #f9f9f9;
+}
+
+.cv-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cv-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.cv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.cv-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.cv-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cv-buttons .btn {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* espace entre les boutons */
+    margin-top: 15px;
+  }
+
+  .view-details-btn,
+  .view-git-btn {
+    display: inline-block;
+    width: 90%;           /* occupe presque toute la largeur sur mobile */
+    max-width: 300px;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Dégradés différents pour chaque bouton */
+  .view-details-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+  }
+
+  .view-git-btn {
+    background: linear-gradient(135deg, #24292e, #57606a);
+  }
+
+  /* Hover effet */
+  .view-details-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+
+  .view-git-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+
+  /* Icones à droite avec spacing */
+  .view-details-btn i,
+  .view-git-btn i {
+    margin-left: 8px;
+  }
+}
+
+
+
